@@ -258,13 +258,8 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 
-{% if page.carpentry == "swc" %}
-  {% include sc/schedule.html %}
-{% elsif page.carpentry == "dc" %}
-  {% include dc/schedule.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/schedule.html %}
-{% endif %}
+ {% include dc/schedule.html %}
+
 
 {% comment %}
   Collaborative Notes
