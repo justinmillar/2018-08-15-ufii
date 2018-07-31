@@ -1,18 +1,18 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
-carpentry: "FIXME"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
-latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-email: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+carpentry: "dc"    # what kind of Carpentry (must be either "lc" or "dc" or "swc")
+venue: "University of Florida Informatics Institute"        # brief name of host site without address (e.g., "Euphoric State University")
+address: ""      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+latlng: "29.648248, -82.344031"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use https://www.latlong.net/)
+humandate: "Aug 15-16, 2018"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 4.30 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2018-08-15      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2018-08-16        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["TBD"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["TBD"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+email: ["simona.picardi@ufl.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 collaborative_notes:             # optional: URL for the workshop collaborative notes, e.g. an Etherpad or Google Docs document
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -51,13 +51,53 @@ If you are running a self-organized workshop or have not put in a workshop reque
 <a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
 and our administrator may contact you if we need any extra information.</h4>
 
+<h2>Registration</h2>
+
+<p>
+  Space is limited to 24 participants for this workshop
+  and registration is required. A fee of $46.00 will 
+  be charged and lunch will be provided both days. 
+  Please plan on attending the entire time for both days.
+  You can register in UF's conference system here:
+</p>
+
+<p><strong>
+  We expect to open registration for this workshop on Thursday, 8/2/2018.
+  <!-- <a href="">Register Now</a> -->
+  <!-- Registration is now full -->
+</strong></p>
+
 <h2 id="general">General Information</h2>
 
 {% comment %}
   INTRODUCTION
-
-  Edit the general explanatory paragraph below if you want to change
-  the pitch.
+<p>
+  The UF Carpentries Club is offering a two day Data Carpentry workshop to help the
+  UF community get started learning R and common data management tools such
+  as the spreadsheets, OpenRefine, and SQL. Need to learn some programming for a class? Have data
+  you're scared to work with in Excel? Want to collaborate effectively with your peers?
+  We were there once too. Come start learning with us.
+</p>
+<p>
+  Our instructors are trained by the Carpentries in evidence-based pedagogy and our 
+  materials have been developed collaboratively over years by dozens of contributors.
+  The <a href="https://informatics.institute.ufl.edu/">University of Florida Informatics Institute</a>
+  and <a href="https://biodiversity.institute.ufl.edu/">Biodiversity Institute</a>
+  have generously volunteered space and resources for this workshop in order to
+  advance the skillset of the UF community. The organizers, instructors, and helpers 
+  are volunteering their time to help UF, and you!
+</p>
+<p>
+  The international <a href="http://datacarpentry.org">Data Carpentry</a> organization
+  develops and teaches workshops on the fundamental data skills needed to conduct 
+  research. Our mission is to provide researchers high-quality, domain-specific 
+  training covering the full lifecycle of data-driven research. Our lessons are domain 
+  specific, from life and physical sciences to social science and build on the existing 
+  knowledge of learners to enable them to quickly apply skills learned to their own 
+  research. Our initial target audience is learners who have little to no prior computational 
+  experience. We create a friendly environment for learning to empower researchers and enable 
+  data driven discovery.
+</p>
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/intro.html %}
@@ -70,8 +110,14 @@ and our administrator may contact you if we need any extra information.</h4>
 {% comment %}
   AUDIENCE
 
-  Explain who your audience is.  (In particular, tell readers if the
-  workshop is only open to people from a particular institution.
+  <p id="who">
+  <strong>Who:</strong>
+  The course is open to all members of the UF community: students, staff, and faculty.
+  <strong>
+    You don't need to have any previous knowledge of the tools
+    that will be presented at the workshop.
+  </strong>
+</p>
 {% endcomment %}
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
