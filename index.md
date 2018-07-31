@@ -258,8 +258,13 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endcomment %}
 <h2 id="schedule">Schedule</h2>
 
- {% include dc/schedule.html %}
-
+{% if page.carpentry == "swc" %}
+  {% include sc/schedule.html %}
+{% elsif page.carpentry == "dc" %}
+  {% include dc/schedule.html %}
+{% elsif page.carpentry == "lc" %}
+  {% include lc/schedule.html %}
+{% endif %}
 
 {% comment %}
   Collaborative Notes
@@ -298,13 +303,8 @@ and our administrator may contact you if we need any extra information.</h4>
 {% endcomment %}
 <h2 id="syllabus">Syllabus</h2>
 
-{% if page.carpentry == "swc" %}
-  {% include sc/syllabus.html %}
-{% elsif page.carpentry == "dc" %}
   {% include dc/syllabus.html %}
-{% elsif page.carpentry == "lc" %}
-  {% include lc/syllabus.html %}
-{% endif %}
+
 
 <hr/>
 
