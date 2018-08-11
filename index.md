@@ -53,13 +53,10 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   and registration is required. A fee of $46.00 will 
   be charged and lunch will be provided both days. 
   Please plan on attending the entire time for both days.
-  You can register in UF's conference system here:
+  You can register in UF's conference system here: <a href="http://reg.conferences.dce.ufl.edu/SSP/1400069295">Registration Page</a>
 </p>
 
 <p><strong>
-  We expect to open registration for this workshop on Thursday, 8/2/2018.
-  <!-- <a href="">Register Now</a> -->
-  <!-- Registration is now full -->
 </strong></p>
 
 <h2 id="general">General Information</h2>
